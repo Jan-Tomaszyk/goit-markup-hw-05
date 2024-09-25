@@ -1,0 +1,471 @@
+:root {
+  --blekit:rgba(33, 150, 243, 1);
+  --superjasnoszary: rgba(245, 244, 250, 1);
+  --uperjasnoszary: rgba(236, 236, 236, 1);
+  --jasnoszary: rgba(117, 117, 117, 1);
+  --ciemnoszary:  rgba(33, 33, 33, 1);
+  --ciemnoszaryb: rgba(255, 255, 255, 0.1);
+  --szarocien: rgba(229, 229, 229, 0.4);
+  --jasnoszaryikony: rgba(175, 177, 184, 1);
+  --bialy: rgba(255, 255, 255, 1);
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    font-size: 14px;
+    line-height: 117%;
+    letter-spacing: 0.06em;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+}
+.container
+{
+  width: 1200px;
+  margin:0%;
+  padding-left: 115px;
+  padding-right: 115px;
+  /*padding-top: 24px;*/
+}
+
+.section
+{
+  width: 1600px ;
+  margin:0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.link
+{
+  text-decoration: none;
+  color: inherit;
+}
+.kontakty
+{
+  display: flex;
+  gap: 20px;
+}
+
+.kontakty li {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.kontakty .poziom
+{
+  gap: 10px;
+}
+
+.kontakt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--jasnoszary);
+  fill: var(--jasnoszary);
+  stroke-width: 1px;
+  stroke: var(--jasnoszary);
+  text-decoration-line: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.kontakt :focus, .kontakt :hover
+{
+  color: var(--blekit);
+  stroke: var(--blekit);
+  fill: var(--blekit);
+  border-color: var(--blekit);
+}
+.icon 
+{
+  fill: var(--jasnoszaryikony);
+}
+/*.icon:hover
+{
+  fill:blue;
+}*/
+/*
+.ciemnasek .icon
+{
+  fill: #a2a2a2;
+}*/
+.header
+{
+  border-bottom: 1px solid var(--uperjasnoszary);
+  width: 1400px;
+  margin:0%;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+/*«C1» Jako tło tworzony jest duży obraz z efektem przyciemnienia (pod nagłówkiem). Do przyciemnienia stosuje się wielowarstwowe tło z gradientem.*/
+
+
+
+.poziom
+{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}/*
+.poziom ul.poziom 
+{
+  margin-left: 93px;
+}*/
+ul.poziomlista
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;/**/
+}
+
+.poziom > li:first-child
+{
+  margin-left: 0;
+}
+.poziom > li:last-child
+{
+  margin-right: 0;
+}
+.poziom .kontakty:first-of-type
+{
+  margin-right: 50px;
+}
+.poziom > .kontakty
+{
+  margin-left: 301px;
+  margin-top: 0px;
+}
+
+ul
+{
+  list-style: none;
+}
+
+ul.poziom
+{
+  margin-top: 10px;
+  padding-bottom: 28px;
+}
+a.logo.link
+{
+  font-family: 'Raleway', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: inherit;
+  letter-spacing: 0.03em;
+  line-height: 117%;
+  margin-bottom: 20px;
+  /*line-height: 30.52px;
+  letter-spacing: 0.03em;
+  text-align: left;*/
+}
+
+.naszkarta
+{
+  box-shadow: 0px 2px 3px 1px hsla(0,0%,0%,.3);
+}
+
+.portkarta:hover
+{
+  box-shadow: 0px 2px 3px 1px hsla(0,0%,0%,.3);
+}
+
+.socjalki
+{
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px 0px;
+}
+.socjalki .socjalka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--bialy);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.socjalki div.socjalka:hover, .socjalki div.socjalka:focus
+{
+  background-color: var(--blekit);
+}
+
+.socjalki .socjalka:hover .icon, .socjalki .socjalka:focus .icon
+{
+  color: var(--bialy);
+  fill: var(--bialy);
+}
+.socjalki .socjalka .icon:hover, .socjalki .socjalka .icon:focus
+{
+  color: var(--bialy);
+  fill: var(--bialy);
+}
+.ciemnasek .socjalki
+{
+  padding: 16px 0px 0px;
+}
+
+.ciemnasek .socjalki .socjalka
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ciemnoszaryb);
+  background-color: var(--ciemnoszaryb);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ciemnasek .socjalki div.socjalka .icon
+{
+  color: var(--bialy);
+  fill: var(--bialy);
+}
+
+.ciemnasek .socjalki div.socjalka:hover, .socjalki div.socjalka:focus
+{
+  background-color: var(--blekit);
+}
+
+.menu > .link
+{
+  font-weight: 500;
+  background:var(--ciemnoszary);
+}
+.web, .link:hover, .link:focus
+{
+  color: var(--blekit);
+  stroke: var(--blekit);
+  fill: var(--blekit);
+  border-color: var(--blekit);
+}
+
+.menu > .poziom 
+{
+  gap: 46px;
+}
+
+.ciemnasek
+{
+  background: rgba(47, 48, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.liststop > .listel
+{
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.liststop > .listel:first-child
+{
+  margin-top: 20px;
+}
+
+.liststop > .listel:last-child
+{
+  margin-bottom: 0px;
+}
+
+.naguwek
+{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+h2.naguwek
+{
+  font-size: 36px;
+}
+
+h1.naguwek
+{
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 136%;
+  width: 696px;
+}
+
+.przycisk
+{
+  color: var(--ciemnoszary);
+  background: var(--superjasnoszary);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 162.5%;
+  border-width: 0;
+  cursor:pointer;
+  width: 121px;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+/*.przycisk:active
+{
+  color: white;
+  background: var(--blekit);
+}*/
+
+.przycisk:hover, .przycisk:focus
+{
+  box-shadow: 0px 2px 3px 1px hsla(0,0%,0%,.3);
+  color: white;
+  background: var(--blekit);
+}
+
+.ciemnasek .przycisk
+{
+  background: var(--blekit);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  text-align: center;
+  width: 200px;
+  padding: 17px;
+}
+
+.wazne
+{
+  font-weight: 700;
+  color: var(--ciemnoszary);
+}
+
+.zwykle
+{
+  color: var(--jasnoszary);
+}
+
+.podpis
+{
+  font-size: 18px;
+}
+
+.kategoria
+{
+  font-size: 16px;
+}
+
+.ciemnasek > .kontakt
+{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.centrum
+{
+  display: flex;
+  justify-content: center;
+}
+/**/
+.Klient
+{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-color: var(--jasnoszaryikony);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Klient:hover, .Klient:focus 
+{
+  border-color: var(--blekit);
+}
+.Klient:hover svg.icon, svg.Klient:focus .icon
+{
+  color: var(--blekit);
+  fill: var(--blekit);
+}
+
+.siatka
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom:66px;
+}
+
+.siatkaitem:nth-child(3n+1)
+{
+  margin-left: 0;
+}
+
+figure
+{
+  margin:0;
+}
+
+.siatkaitem:nth-child(3n)
+{
+  margin-right: 0;
+}
+
+.siatka figcaption
+{
+  border-bottom: 1px solid var(--uperjasnoszary);
+  border-left: 1px solid var(--uperjasnoszary);
+  border-right: 1px solid var(--uperjasnoszary);
+  padding: 10px;
+}
+/*
+.portkarta:hover, .portkarta:focus
+{
+
+}
+*/
+.przyciski
+{
+  padding-left: 295px;
+  padding-right: 295px;
+}
+/*
+#sekh
+{
+  background-image: url('images/sekcja_nag1/img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}*/
+.sekh {
+  background-image: linear-gradient(
+      90deg,
+      var(--szarocien),
+      var(--szarocien)
+    ),
+    url(../images/img.jpg);
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, 1600px;
+}
+
+.przyciski
+{
+  gap: 8px;
+}
