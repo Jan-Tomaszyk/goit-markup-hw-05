@@ -196,7 +196,12 @@ a.logo.link
   position: relative;
 }
 
-/*.przykryty1*/
+.przykryty1
+{
+  position: absolute;
+  bottom:0;
+  z-index: 1;
+}
 .przykrywacz1
 {
   position: absolute;
