@@ -194,10 +194,10 @@ a.logo.link
 .Czym
 {
   position: relative;
-  z-index: 1;
 }
 
-.przykrywacz
+/*.przykryty1*/
+.przykrywacz1
 {
   position: absolute;
   bottom:0;
@@ -213,7 +213,7 @@ a.logo.link
 
 .dziedzina
 {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
