@@ -5,6 +5,7 @@
   --jasnoszary: rgba(117, 117, 117, 1);
   --ciemnoszary:  rgba(33, 33, 33, 1);
   --ciemnoszaryb: rgba(255, 255, 255, 0.1);
+  --ciemnoszaryc: rgba(47, 48, 58, 0.8);
   --szarocien: rgba(229, 229, 229, 0.4);
   --jasnoszaryikony: rgba(175, 177, 184, 1);
   --bialy: rgba(255, 255, 255, 1);
@@ -53,6 +54,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li
   text-decoration: none;
   color: inherit;
 }
+
+/*.menuopcja::after
+{
+  content: "___";
+  white-space: pre;
+  width: 58px;
+  height: 4px;
+  top: 76px;
+  left: 552px;
+  gap: 0px;
+  border-radius: 2px 0px 0px 0px;
+  background: rgba(33, 150, 243, 1);
+  opacity: 0px;
+  /*text-decoration: underline;/
+}*/
+
 .kontakty
 {
   display: flex;
@@ -173,6 +190,25 @@ a.logo.link
   letter-spacing: 0.03em;
   text-align: left;*/
 }
+
+.Czym
+{
+  /*position: absolute;*/
+  z-index: 1;
+}
+
+.przykrywacz
+{
+  background-color: var(--ciemnoszaryc);
+  position: relative;
+  bottom: 70px;
+  z-index: 5;
+  width: 370px;
+  height: 70px;  
+  font-size: 14px;
+  font-weight: 700;
+}
+
 
 .naszkarta
 {
@@ -358,6 +394,7 @@ h1.naguwek
   color: var(--jasnoszary);
 }
 
+
 .podpis
 {
   font-size: 18px;
@@ -468,4 +505,12 @@ figure
 .przyciski
 {
   gap: 8px;
+}
+
+.is-hidden
+{
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  /*transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg,40deg);*/
 }
