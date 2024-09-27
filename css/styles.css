@@ -194,14 +194,15 @@ a.logo.link
 .Czym
 {
   position: relative;
+  margin-right: 30px;
 }
 
-.przykryty1
+/*.przykryty1
 {
   position: absolute;
   bottom:0;
   z-index: 1;
-}
+}*/
 .przykrywacz1
 {
   position: absolute;
@@ -212,6 +213,7 @@ a.logo.link
   height: 70px;  
   
   display: flex;
+  align-items: center;
 }
 
 .dziedzina
